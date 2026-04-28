@@ -13,5 +13,13 @@ public class EmpregadoComissado extends Empregado {// para ter a herança tem qu
         return totalDeVendas * comissao/100;
     }
 
-
+    @Override //alt + insert -> toString e adiciona todos
+    public String toString() {
+        return "EmpregadoComissado{" +
+                "comissao=" + comissao +
+                ", totalDeVendas=" + totalDeVendas +
+                ", nome='" + nome + '\'' +
+                ", matricula=" + matricula +
+                '}';
+    }
 }

@@ -1,5 +1,9 @@
 public class Main {
-    static void main() {
+
+
+    public static void main(String[] args) {
+
+
         Empregado[] empregado = new Empregado[4];//criamos um vetor para passar as informações dos empregados
 
         empregado[0] = new EmpregadoComissado(1, "Pedro", 350000, 20);
@@ -8,7 +12,7 @@ public class Main {
         empregado[3] = new EmpregadoHorista(4, "Maria", 200, 800);
 
         //for tradicional
-        for (int i =0; i < empregado.length; i++){
+        for (int i = 0; i < empregado.length; i++) {
             System.out.println(empregado[i].matricula);
             System.out.println(empregado[i].nome);
             System.out.println(empregado[i].calcularSalario());
@@ -19,14 +23,15 @@ public class Main {
 
         //for generico
         System.out.println("############################################");
-        for (Empregado e : empregado){
+        for (Empregado e : empregado) {
             System.out.println(e.matricula);
             System.out.println(e.nome);
             System.out.println(e.calcularSalario());
             System.out.println();
         }
 
+    }
 
 
     }
-}
+

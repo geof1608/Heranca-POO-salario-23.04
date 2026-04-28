@@ -14,4 +14,13 @@ public class EmpregadoHorista extends Empregado{
     }
 
 
+    @Override
+    public String toString() {//alt + insert e seleciona todos
+        return "EmpregadoHorista{" +
+                "totalDeHorasTrabalhadas=" + totalDeHorasTrabalhadas +
+                ", valorDaHora=" + valorDaHora +
+                ", matricula=" + matricula +
+                ", nome='" + nome + '\'' +
+                '}';
+    }
 }
